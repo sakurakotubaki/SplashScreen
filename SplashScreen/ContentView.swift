@@ -1,21 +1,14 @@
-//
-//  ContentView.swift
-//  SplashScreen
-//
-//  Created by Jboy422 on 2024/06/26.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Color.blue
+                .ignoresSafeArea()
+            Text("コンテンツ画面")
+                .foregroundColor(.white)
+                .font(.system(size: 30))
         }
-        .padding()
     }
 }
 
